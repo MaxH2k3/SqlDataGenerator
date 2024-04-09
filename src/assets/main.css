@@ -1,0 +1,44 @@
+@import './base.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#app {
+  min-height: 100vh;
+  font-weight: normal;
+}
+
+:root {
+  --layout-color: #f3f6f9;
+  --primary-background-color: #ffffff;
+  --primary-text-color: #212529;
+  --secondary-text-color: #13c56b;
+  --secondary-background-color: #865ce2;
+  --third-background-color: #50c3e6;
+  --button-border-color: #ced4da;
+  --input-focus-border: #85a7ec;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form-button {
+  padding: 0.5rem 0.9rem;
+  outline: none;
+  border: 1px solid var(--button-border-color);
+  border-radius: 0.25rem;
+  margin-left: 1rem;
+}
+
+.form-button:focus {
+  box-shadow: 0 0px 6px var(--input-focus-border);
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
